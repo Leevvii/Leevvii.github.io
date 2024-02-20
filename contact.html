@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/images/logos/logo.svg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="content-wrapper">
+        <div class="header__navigation">
+          <button
+            class="header__nav--toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="toggle--menu"
+              aria-hidden="true"
+              data-visible="true"
+              fill="currentColor"
+            >
+              <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="toggle--close"
+              aria-hidden="true"
+              fill="currentColor"
+            >
+              <path
+                d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
+              ></path>
+            </svg>
+            <!-- <i class="bx bx-x toggle--close" aria-hidden="true"></i> -->
+          </button>
+          <div class="logo-wrapper">
+            <a href="#home" class="logo-name">
+              <svg
+                viewBox="0 0 41 47"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                class="logo-image"
+              >
+                <path
+                  d="M20.45 4.57L28.26 9.08L32.22 6.8L20.45 0L0.790009 11.36L4.73001 13.64L20.45 4.57Z"
+                />
+                <path
+                  d="M36.1601 9.08002L20.4501 18.15L12.6401 13.64L8.69009 15.92L20.4501 22.71L40.1201 11.36L36.1601 9.08002Z"
+                />
+                <path
+                  d="M3.95 24.3401L0 22.0601V35.6401L19.66 47.0001V42.4401L3.95 33.3601V24.3401Z"
+                />
+                <path
+                  d="M0 17.4999L15.71 26.5699V35.5899L19.66 37.8799V24.2899L0 12.9399V17.4999Z"
+                />
+                <path
+                  d="M33.0101 22.06V17.5L21.2401 24.29V47L25.1901 44.72V26.57L33.0101 22.06Z"
+                />
+                <path
+                  d="M36.9501 15.2199V33.3599L29.1401 37.8799V42.4399L40.9101 35.6399V12.9399L36.9501 15.2199Z"
+                />
+              </svg>
+              <span>Levi.dev</span>
+            </a>
+          </div>
+          <nav class="header__nav--menu" id="primary-navigation">
+            <ul aria-label="Primary" role="list" class="menu__list main-menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <form class="theme-picker" action="">
+            <fieldset>
+              <legend class="visually-hidden">Pick a theme</legend>
+              <label for="light" class="visually-hidden"> Light </label>
+              <input type="radio" name="theme" id="light" checked />
+
+              <label for="dark" class="visually-hidden"> Dark </label>
+              <input type="radio" name="theme" id="dark" />
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-page">
+        <div class="content-wrapper">
+          <div class="content-grid">
+            <div></div>
+            <form action="" class="contact__form">
+              <fieldset class="form__list">
+                <label for="name">
+                  Name:
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </label>
+                <label for="email">
+                  Email:
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </label>
+                <!-- <label for="">
+                <input type="number" required />
+              </label> -->
+                <label for="message">
+                  Enter your Message:
+                  <textarea name="" id="message" cols="30" rows="10"></textarea>
+                </label>
+                <button class="button--secondary">Submit</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section>
+      <footer id="footer" class="footer">
+        <div class="content-wrapper">
+          <div class="content-grid">
+            <div>
+              <div class="logo-wrapper">
+                <a href="#home" class="logo-name">
+                  <svg
+                    viewBox="0 0 41 47"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="logo-image"
+                  >
+                    <path
+                      d="M20.45 4.57L28.26 9.08L32.22 6.8L20.45 0L0.790009 11.36L4.73001 13.64L20.45 4.57Z"
+                    />
+                    <path
+                      d="M36.1601 9.08002L20.4501 18.15L12.6401 13.64L8.69009 15.92L20.4501 22.71L40.1201 11.36L36.1601 9.08002Z"
+                    />
+                    <path
+                      d="M3.95 24.3401L0 22.0601V35.6401L19.66 47.0001V42.4401L3.95 33.3601V24.3401Z"
+                    />
+                    <path
+                      d="M0 17.4999L15.71 26.5699V35.5899L19.66 37.8799V24.2899L0 12.9399V17.4999Z"
+                    />
+                    <path
+                      d="M33.0101 22.06V17.5L21.2401 24.29V47L25.1901 44.72V26.57L33.0101 22.06Z"
+                    />
+                    <path
+                      d="M36.9501 15.2199V33.3599L29.1401 37.8799V42.4399L40.9101 35.6399V12.9399L36.9501 15.2199Z"
+                    />
+                  </svg>
+                  <span>Levi.dev</span>
+                </a>
+              </div>
+            </div>
+            <div class="">
+              <h6 class="">Social Networks</h6>
+
+              <ul class="footer-menu menu__list mt-md" role="list">
+                <li>
+                  <a href="https://github.com/Leevvii" target="_blank"
+                    >Github</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/john-levi-flores-19a739246/"
+                    target="_blank"
+                    >Linkedin</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h6 class="">Quick Links</h6>
+              <ul class="footer-menu menu__list mt-md" role="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="content-wrapper">
+          <p class="mt-sm">
+            <small> &copy; John Levi Flores. All Rights Reserved 2024. </small>
+          </p>
+        </div>
+      </footer>
+    </section>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

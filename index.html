@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/images/logos/logo.svg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Personal Website | John Levi Flores</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header content-wrapper" id="header">
+      <div class="header__navigation">
+        <button
+          class="header--toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="toggle-icon toggle__menu"
+            aria-hidden="true"
+            data-visible="true"
+          >
+            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="toggle-icon toggle__close"
+            aria-hidden="true"
+          >
+            <path
+              d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
+            ></path>
+          </svg>
+          <!-- <i class="bx bx-x toggle--close" aria-hidden="true"></i> -->
+        </button>
+        <div class="header__logo-wrapper">
+          <a href="#hero" class="header__logo">
+            <svg
+              viewBox="0 0 41 47"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              class="header__logo-image"
+            >
+              <path
+                d="M20.45 4.57L28.26 9.08L32.22 6.8L20.45 0L0.790009 11.36L4.73001 13.64L20.45 4.57Z"
+              />
+              <path
+                d="M36.1601 9.08002L20.4501 18.15L12.6401 13.64L8.69009 15.92L20.4501 22.71L40.1201 11.36L36.1601 9.08002Z"
+              />
+              <path
+                d="M3.95 24.3401L0 22.0601V35.6401L19.66 47.0001V42.4401L3.95 33.3601V24.3401Z"
+              />
+              <path
+                d="M0 17.4999L15.71 26.5699V35.5899L19.66 37.8799V24.2899L0 12.9399V17.4999Z"
+              />
+              <path
+                d="M33.0101 22.06V17.5L21.2401 24.29V47L25.1901 44.72V26.57L33.0101 22.06Z"
+              />
+              <path
+                d="M36.9501 15.2199V33.3599L29.1401 37.8799V42.4399L40.9101 35.6399V12.9399L36.9501 15.2199Z"
+              />
+            </svg>
+            <span class="header__logo-text">Levi.dev</span>
+          </a>
+        </div>
+        <nav class="header__menu" id="primary-navigation">
+          <ul aria-label="Primary" role="list" class="menu-list main-menu">
+            <li class="main-menu__item">
+              <a href="#hero" class="main-menu__link menu-link">Home</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#about" class="main-menu__link menu-link">About</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#skills" class="main-menu__link menu-link">Skills</a>
+            </li>
+            <!-- <li class="main-menu__item"><a href="#portfolio" class="main-menu__link">Portfolio</a></li> -->
+            <li class="main-menu__item">
+              <a href="#contact" class="main-menu__link menu-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <form class="header__theme-picker" action="">
+          <fieldset class="header__theme-picker-fieldset">
+            <legend class="visually-hidden">Pick a theme</legend>
+            <label for="light" class="visually-hidden"> Light </label>
+            <input type="radio" name="theme" id="light" checked />
+
+            <label for="dark" class="visually-hidden"> Dark </label>
+            <input type="radio" name="theme" id="dark" />
+          </fieldset>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero content-wrapper section__padding-block" id="hero">
+        <div class="content-grid">
+          <div class="hero__content">
+            <!-- <span>&lt;&#47;</span> -->
+            <h1 class="hero__title">Web Developer</h1>
+            <!-- <span>&gt;</span> -->
+            <p class="hero__description mt-xs">
+              Welcome to my corner of the web, where I showcase my skills and a
+              bit about the person behind the code.
+            </p>
+            <div class="cta-wrapper mt-lg">
+              <button
+                class="buttons button--primary"
+                onclick="scrollToSection('contact')"
+              >
+                Contact Me
+              </button>
+              <button
+                class="buttons button--secondary"
+                onclick="scrollToSection('about')"
+              >
+                Explore
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Page -->
+      <section id="about" class="about content-wrapper section__padding-block">
+        <h2 class="section-header">About Me</h2>
+        <div class="content-grid mt-lg">
+          <img
+            class="about__image"
+            src="./assets/images/about-image.jpg"
+            alt="me"
+          />
+
+          <div class="about__description">
+            <p class="about__name">John Levi Flores</p>
+            <p class="mt-xs">
+              A passionate front-end developer with a creative mindset and a
+              love for crafting digital experiences. I thrive on turning ideas
+              into intuitive, user-friendly interfaces that leave a lasting
+              impression.
+            </p>
+            <div class="mt-md">
+              <a
+                class="mt-xs | link--tertiary"
+                href="./assets/file/john-levi-flores.pdf"
+                download
+                >Download CV</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section
+        id="skills"
+        class="skills content-wrapper section__padding-block"
+      >
+        <h2 class="visually-hidden section-header">My Skills</h2>
+        <div>
+          <h3 class="skills__heading">Discover My Unique Skillset</h3>
+          <p class="mt-xs">
+            As a front-end developer, I bring a diverse set of skills to the
+            table.
+          </p>
+        </div>
+        <div class="content-grid mt-xl">
+          <div class="skill-card__wrapper card">
+            <h4 class="mt-sm skill-title">Responsive UI Design</h4>
+            <p class="mt-xs skill-description">
+              Designing websites that provide a seamless experience across
+              various devices and screen sizes.
+            </p>
+          </div>
+          <div class="skill-card__wrapper card">
+            <h4 class="mt-sm skill-title">Performance Optimization</h4>
+            <p class="mt-xs skill-description">
+              Identifying and resolving issues to enhance website performance.
+            </p>
+          </div>
+          <div class="skill-card__wrapper card">
+            <h4 class="mt-sm skill-title">Web Development</h4>
+            <p class="mt-xs skill-description">
+              Adept at creating dynamic and visually appealing websites and web
+              applications.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scroller Animation -->
+      <section class="scroller-wrapper content-wrapper section__padding-block">
+        <div class="scroller" data-direction="left" data-speed="fast">
+          <ul class="tag-list scroller__inner" role="list">
+            <li class="tag-list__item">HTML</li>
+            <li class="tag-list__item">CSS3</li>
+            <li class="tag-list__item">JavaScript</li>
+            <li class="tag-list__item">Bootstrap</li>
+            <li class="tag-list__item">Figma</li>
+            <li class="tag-list__item">HTML</li>
+            <li class="tag-list__item">CSS3</li>
+            <li class="tag-list__item">JavaScript</li>
+            <li class="tag-list__item">Bootstrap</li>
+            <li class="tag-list__item">Figma</li>
+          </ul>
+        </div>
+      </section>
+      <!-- Portfolio Page -->
+      <!-- <section
+        class="portfolio content-wrapper section__padding-block"
+        id="portfolio"
+      >
+        <h2 class="section-header">My Portfolio</h2>
+        <div class="portfoliocard__wrapper mt-lg">
+          <div class="portfoliocard__items card">
+            <div class="portfoliocard__content">
+              <h4 class="portfoliocard__title">ShopifyEase</h4>
+              <p class="portfolio__description mt-xs">
+                ShopifyEase is a dynamic e-commerce website designed to
+                revolutionize online shopping experiences.
+              </p>
+              <div class="mt-lg">
+                <a href="#" class="link--tertiary mt-md">View Project</a>
+              </div>
+            </div>
+
+            <img
+              src="./assets/images/portfolio/portfolio-1.jpg"
+              alt=""
+              class="portfoliocard__image"
+            />
+          </div>
+          <div class="portfoliocard__items card">
+            <div class="portfoliocard__content">
+              <h4 class="portfoliocard__title">GreenEats</h4>
+              <p class="portfolio__description mt-xs">
+                GreenEats is a forward-thinking e-commerce platform dedicated to
+                promoting sustainable living through eco-friendly food products.
+              </p>
+              <div class="mt-lg">
+                <a href="#" class="link--tertiary mt-md">View Project</a>
+              </div>
+            </div>
+
+            <img
+              src="./assets/images/portfolio/portfolio-2.jpg"
+              alt=""
+              class="portfoliocard__image"
+            />
+          </div>
+          <div class="portfoliocard__items card">
+            <div class="portfoliocard__content">
+              <h4 class="portfoliocard__title">FitFusion</h4>
+              <p class="portfolio__description mt-xs">
+                FitFusion is a cutting-edge e-commerce platform dedicated to
+                revolutionizing the way people approach fitness and wellness.
+              </p>
+              <div class="mt-lg">
+                <a href="#" class="link--tertiary mt-md">View Project</a>
+              </div>
+            </div>
+
+            <img
+              src="./assets/images/portfolio/portfolio-3.jpg"
+              alt=""
+              class="portfoliocard__image"
+            />
+          </div>
+        </div>
+      </section> -->
+      <!-- Contact Section -->
+      <section
+        class="contact content-wrapper section__padding-block"
+        id="contact"
+      >
+        <h2 class="visually-hidden section-header">Contact Me</h2>
+        <div class="content-grid mt-lg">
+          <div class="contact__content">
+            <h3 class="contact__heading">Get in Touch</h3>
+            <p class="mt-xs">
+              Whether you have an idea for a project or just want to chat, feel
+              free to shoot me an email!
+            </p>
+            <a
+              class="link--tertiary mt-lg contact__link"
+              href="mailto: floresjohnlevi@gmail.com"
+            >
+              Say Hello
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      id="footer"
+      class="footer content-wrapper section__padding-block full-width"
+    >
+      <div class="content-grid">
+        <div class="header__logo-wrapper">
+          <a href="#hero" class="header__logo">
+            <svg
+              viewBox="0 0 41 47"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              class="header__logo-image"
+            >
+              <path
+                d="M20.45 4.57L28.26 9.08L32.22 6.8L20.45 0L0.790009 11.36L4.73001 13.64L20.45 4.57Z"
+              />
+              <path
+                d="M36.1601 9.08002L20.4501 18.15L12.6401 13.64L8.69009 15.92L20.4501 22.71L40.1201 11.36L36.1601 9.08002Z"
+              />
+              <path
+                d="M3.95 24.3401L0 22.0601V35.6401L19.66 47.0001V42.4401L3.95 33.3601V24.3401Z"
+              />
+              <path
+                d="M0 17.4999L15.71 26.5699V35.5899L19.66 37.8799V24.2899L0 12.9399V17.4999Z"
+              />
+              <path
+                d="M33.0101 22.06V17.5L21.2401 24.29V47L25.1901 44.72V26.57L33.0101 22.06Z"
+              />
+              <path
+                d="M36.9501 15.2199V33.3599L29.1401 37.8799V42.4399L40.9101 35.6399V12.9399L36.9501 15.2199Z"
+              />
+            </svg>
+            <span class="header__logo-text">Levi.dev</span>
+          </a>
+        </div>
+
+        <div>
+          <h6 class="footer__heading">Social Networks</h6>
+
+          <ul class="footer-menu menu-list mt-md" role="list">
+            <li>
+              <a
+                href="https://github.com/Leevvii"
+                target="_blank"
+                class="menu-link footer-menu__link"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/john-levi-flores-19a739246/"
+                target="_blank"
+                class="menu-link footer-menu__link"
+                >Linkedin</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h6 class="footer__heading">Quick Links</h6>
+          <ul class="footer-menu menu-list mt-md" role="list">
+            <li>
+              <a href="#hero" class="menu-link footer-menu__link">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="menu-link footer-menu__link">About</a>
+            </li>
+            <li>
+              <a href="#skills" class="menu-link footer-menu__link">Skills</a>
+            </li>
+            <!-- <li><a href="#" class="menu-link footer-menu__link">Portfolio</a></li> -->
+            <li>
+              <a href="#contact" class="menu-link footer-menu__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__copyright-text mt-sm">
+        &copy; John Levi Flores. All Rights Reserved 2024.
+      </p>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+    <script>
+      function scrollToSection(sectionId) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    </script>
+  </body>
+</html>

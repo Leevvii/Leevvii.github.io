@@ -1,0 +1,13 @@
+.contact-page {
+  min-height: 100svh;
+  padding-top: var(--scroll-padding);
+}
+
+.form__list {
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.contact-grid {
+}
